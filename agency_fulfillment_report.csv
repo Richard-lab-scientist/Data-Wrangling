@@ -1,0 +1,25 @@
+Order Ref,Product,SKU Code,Qty Fulfilled,Fulfilment Date,Agency Notes
+ORD-1001,Wireless Mouse - Black,SKU-1001,45,2026-05-02,Partial stock issue
+ord-1002,Mechanical Keyboard,SKU-1002,30,2026-05-02,
+ORD-1003,USB-C Hub 7-in-1,SKU-1003,75,2026-05-03,
+ORD-1004,Webcam HD 1080p,SKU-1004,20,2026-05-03,
+ORD-1004,Webcam HD 1080p,SKU-1004,20,2026-05-03,Duplicate entry - system resend
+ORD-1005 ,Laptop Stand Aluminium,SKU-1005,40,2026-05-04,
+ORD-1006,Noise Cancelling Headphones,SKU-1006,12,2026-05-04,Stock shortage
+ORD-1007,Portable SSD 1TB,SKU-1007,60,2026-05-05,
+ORD-1008,Wireless Charger Pad,SKU-1008,100,2026-05-05,
+ORD-1010,Monitor Arm Mount,SKU-1010,25,2026-05-06,
+ORD-1011,Wireless Mouse - Black,SKU-1001,35,2026-05-07,
+ord-1012,Mechanical Keyboard,SKU-1002,20,2026-05-07,
+ORD-1013,USB-C Hub 7-in-1,SKU-1003,50,2026-05-08,Short shipped
+ORD-1014,Webcam HD 1080p,SKU-1004,30,2026-05-08,
+ORD-1015,Laptop Stand Aluminium,SKU-1005,65,2026-05-09,
+ORD-1016,Noise Cancelling Headphones,SKU-1006,10,2026-05-09,
+ORD-1018 ,Wireless Charger Pad,SKU-1008,80,2026-05-10,
+ORD-1019,Bluetooth Speaker Mini,SKU-1009,40,2026-05-10,
+ORD-1020,Monitor Arm Mount,SKU-1010,20,2026-05-11,Overshipped - agency error
+ORD-1021,Wireless Mouse - Black,SKU-1001,70,2026-05-12,
+ord-1022,Mechanical Keyboard,SKU-1002,25,2026-05-12,
+ORD-1023,USB-C Hub 7-in-1,SKU-1003,45,2026-05-13,
+ORD-1024,Webcam HD 1080p,SKU-1004,30,2026-05-13,Short shipped
+ORD-1025,Laptop Stand Aluminium,SKU-1005,60,2026-05-14,

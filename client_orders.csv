@@ -1,0 +1,26 @@
+Order ID,Client,Product Name,SKU,Qty Ordered,Order Date
+ORD-1001,Brightline Retail,Wireless Mouse - Black,SKU-1001,50,2026-05-01
+ORD-1002,Brightline Retail,Mechanical Keyboard,SKU-1002,30,2026-05-01
+ORD-1003,Nova Goods,USB-C Hub 7-in-1,SKU-1003,75,2026-05-02
+ORD-1004,Nova Goods,Webcam HD 1080p,SKU-1004,20,2026-05-02
+ORD-1005,Apex Living,Laptop Stand Aluminium,SKU-1005,40,2026-05-03
+ORD-1006,Apex Living,Noise Cancelling Headphones,SKU-1006,15,2026-05-03
+ORD-1007,Brightline Retail,Portable SSD 1TB,SKU-1007,60,2026-05-04
+ORD-1008,Brightline Retail,Wireless Charger Pad,SKU-1008,100,2026-05-04
+ORD-1009,Nova Goods,Bluetooth Speaker Mini,SKU-1009,45,2026-05-05
+ORD-1010,Nova Goods,Monitor Arm Mount,SKU-1010,25,2026-05-05
+ORD-1011,Apex Living,Wireless Mouse - Black,SKU-1001,35,2026-05-06
+ORD-1012,Apex Living,Mechanical Keyboard,SKU-1002,20,2026-05-06
+ORD-1013,Brightline Retail,USB-C Hub 7-in-1,SKU-1003,55,2026-05-07
+ORD-1014,Brightline Retail,Webcam HD 1080p,SKU-1004,30,2026-05-07
+ORD-1015,Nova Goods,Laptop Stand Aluminium,SKU-1005,65,2026-05-08
+ORD-1016,Nova Goods,Noise Cancelling Headphones,SKU-1006,10,2026-05-08
+ORD-1017,Apex Living,Portable SSD 1TB,SKU-1007,50,2026-05-09
+ORD-1018,Apex Living,Wireless Charger Pad,SKU-1008,80,2026-05-09
+ORD-1019,Brightline Retail,Bluetooth Speaker Mini,SKU-1009,40,2026-05-10
+ORD-1020,Brightline Retail,Monitor Arm Mount,SKU-1010,15,2026-05-10
+ORD-1021,Nova Goods,Wireless Mouse - Black,SKU-1001,70,2026-05-11
+ORD-1022,Nova Goods,Mechanical Keyboard,SKU-1002,25,2026-05-11
+ORD-1023,Apex Living,USB-C Hub 7-in-1,SKU-1003,45,2026-05-12
+ORD-1024,Apex Living,Webcam HD 1080p,SKU-1004,35,2026-05-12
+ORD-1025,Brightline Retail,Laptop Stand Aluminium,SKU-1005,60,2026-05-13
