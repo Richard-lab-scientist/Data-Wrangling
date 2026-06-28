@@ -24,6 +24,7 @@ The initial data preparation phase, the following tasks were pereformed:
 1. Consolidating data in a workbook.
 2. Comparisons of records and quantities.
 3. Flag Mismatch automatically.
+4. Creating a Unified Model, highighting errors and mismatches.
 
 ## Skills demonstrated
 
@@ -32,6 +33,10 @@ The initial data preparation phase, the following tasks were pereformed:
 - Automated discrepancy detection (`IF`, `COUNTIF`, `COUNTIFS`)
 - Conditional formatting to surface issues visually
 
+### Issues Found
+- Quantity Mismatches vs Client Order: 5 orders are inconsistent with the agency report and 4 client order disagrees with warehouse log
+- Missing Records: ORD-1009 and ORD-1017 do not appear in agency report, despite being dispatched by the warehouse. ORD-1019 is dispatched per the agency but missing from the warehouse log.
+- Data quality: ORD-1004 is a duplicate record in the agency report - 
 
 None of the three match. IDs arrive in inconsistent casing (`ORD-1002` vs `ord-1002`) and with stray whitespace, column names differ between sources, one row is duplicated, two orders are missing from the agency report, and one is missing from the warehouse log. Quantities disagree on 9 of the 25 orders.
 
