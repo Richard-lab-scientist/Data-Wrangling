@@ -4,6 +4,8 @@
 
 Three records containing the same client order details from a database each contains: client order table, fulfillment table and warehouse table. Presented in inconsistent formats and conflicting records. This Project aims to reconcile the data by: Cleaning, joining and flagging discrepancies.
 
+<img width="1412" height="541" alt="Screenshot 2026-06-28 182542" src="https://github.com/user-attachments/assets/5f663701-54e2-4b31-9ce3-393f4663f8c4" />
+
 ### Data Sources 
 The data sources contains the:
 - Client_Order.csv
@@ -38,20 +40,10 @@ The initial data preparation phase, the following tasks were pereformed:
 - Missing Records: ORD-1009 and ORD-1017 do not appear in agency report, despite being dispatched by the warehouse. ORD-1019 is dispatched per the agency but missing from the warehouse log.
 - Data quality: ORD-1004 is a duplicate record in the agency report - flagged to avoid double counting the same order.
 
-### Final Model 
-Built in `Data_Reconciliation_Model.xlsx`:
-
-- **Raw tabs** — each source kept exactly as received (messy, unedited), plus a `Clean Key` helper column (`=TRIM(UPPER(...))`) that standardises IDs for joining.
-- **Reconciliation Model** — the master tab. Uses `INDEX/MATCH` to pull the agency and warehouse figures onto the client order list via the cleaned key, then flags every order with `IF` logic:
-  - `Quantity Mismatch` if quantities disagree
-  - `Missing in Agency Report` / `Missing in Warehouse Log` if an order is absent from a source
-  - A duplicate-row flag carried through from the raw agency data
-  - An overall `NEEDS REVIEW` / `OK` flag per order, with conditional formatting (red/green)
-- **Discrepancy Summary** — a rollup by discrepancy type and by client, with a chart, built entirely from formulas referencing the model (no hardcoded numbers).
-- **Findings Memo** — a short written report in the format you'd actually send to a senior stakeholder: what was found, and what to do about it.
-
-### Result
-Of 25 orders, **12 (48%) are flagged for review**, across 13 individual discrepancies (5 agency quantity mismatches, 4 warehouse quantity mismatches, 2 missing-in-agency, 1 missing-in-warehouse, 1 duplicate row).
-
----
-*Built as a portfolio project to demonstrate Excel-based data reconciliation and discrepancy-checking skills.*
+### Recommendation
+-  Agency - quantity confirmation: ORD-1001, ORD-1006, ORD-1013, ORD-1020, ORD-1024 (5 orders where fulfilled qty does not match the order).						
+-  Agency - missing records: ORD-1009, ORD-1017 do not appear in the agency report; ask the agency to confirm fulfilment status.						
+-  Agency - data quality: flag the ORD-1004 duplicate row so it is not double-counted in any downstream agency reporting.						
+-  Warehouse - quantity confirmation: ORD-1002, ORD-1008, ORD-1016, ORD-1023 (4 orders where dispatched qty does not match the order).						
+-  Warehouse - missing record: ORD-1019 is confirmed by the agency but absent from the dispatch log; confirm whether it was shipped.						
+-  Hold final client sign-off on this batch until the above 12 orders are confirmed.						 
