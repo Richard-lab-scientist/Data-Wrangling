@@ -1,16 +1,37 @@
-# Third-Party Data Reconciliation Model
+## Data Reconciliation & Modelling
 
-A self-contained Excel project that simulates a real data-analyst workflow: pulling together messy, conflicting data from multiple sources, cleaning it, flagging every discrepancy automatically, and reporting the findings to a stakeholder.
+### Project Overview
 
-## The scenario
+Three records containing the same client order details from a database each contains: client order table, fulfillment table and warehouse table. Presented in inconsistent formats and conflicting records. This Project aims to reconcile the data by: Cleaning, joining and flagging discrepancies.
 
-Three teams record the same batch of 25 client orders, independently:
+### Data Sources 
+The data sources were contains the:
+- Client_Order.csv
+- Agency_fulfillment_report.csv
+-  Warehouse_dispatch_log.csv
 
-| Source | Represents | Format |
-|---|---|---|
-| `data/client_orders.csv` | What the client ordered (source of truth) | Order ID, Client, Product, SKU, Qty Ordered |
-| `data/agency_fulfillment_report.csv` | What a third-party agency says it fulfilled | Order Ref, Product, SKU Code, Qty Fulfilled |
-| `data/warehouse_dispatch_log.csv` | What the warehouse actually dispatched | Order Number, Item Description, SKU, Qty Dispatched |
+### Tools
+- Excel - Data Cleaning
+- Formula's
+
+### Data Cleaning/Preparation
+The initial data preparation phase, the following tasks were pereformed:
+1. Data Loading and Inspection.
+2. Handling values and inconsistent formats.
+3. Data Cleaning and Formatting.
+
+### Data Reconciliation and Modelling
+1. Consolidating data in a workbook.
+2. Comparisons of records and quantities.
+3. Flag Mismatch automatically.
+
+## Skills demonstrated
+
+- Multi-source data cleaning (`TRIM`, `UPPER`, standardising inconsistent keys)
+- Cross-sheet lookups (`INDEX/MATCH` with `IFERROR` handling)
+- Automated discrepancy detection (`IF`, `COUNTIF`, `COUNTIFS`)
+- Conditional formatting to surface issues visually
+
 
 None of the three match. IDs arrive in inconsistent casing (`ORD-1002` vs `ord-1002`) and with stray whitespace, column names differ between sources, one row is duplicated, two orders are missing from the agency report, and one is missing from the warehouse log. Quantities disagree on 9 of the 25 orders.
 
@@ -32,13 +53,7 @@ Built in `Data_Reconciliation_Model.xlsx`:
 ### Result
 Of 25 orders, **12 (48%) are flagged for review**, across 13 individual discrepancies (5 agency quantity mismatches, 4 warehouse quantity mismatches, 2 missing-in-agency, 1 missing-in-warehouse, 1 duplicate row).
 
-## Skills demonstrated
 
-- Multi-source data cleaning (`TRIM`, `UPPER`, standardising inconsistent keys)
-- Cross-sheet lookups (`INDEX/MATCH` with `IFERROR` handling)
-- Automated discrepancy detection (`IF`, `COUNTIF`, `COUNTIFS`) instead of manual eyeballing
-- Conditional formatting to surface issues visually
-- Stakeholder-ready summary and written reporting, not just raw numbers
 
 ## Repo structure
 ```
